@@ -33,8 +33,8 @@ class InteractiveProjectorTracker:
         self.calibration_points = []
         self.calibration_complete = False
         self.transform_matrix = None
-        self.projector_width = 1920
-        self.projector_height = 1080
+        self.projector_width = 1920 # Width of projector screen
+        self.projector_height = 1080 # Height of projector screen
         #white screen
         self.projector_window = np.zeros((self.projector_height, self.projector_width, 3), np.uint8)
         self.projector_window.fill(255)
